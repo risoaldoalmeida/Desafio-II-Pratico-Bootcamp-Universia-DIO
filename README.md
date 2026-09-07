@@ -16,9 +16,7 @@
 
 <img src="https://img.shields.io/badge/GitHub-Portfolio-181717?style=for-the-badge&logo=github">
 
-<a href="https://www.dio.me/">
 <img src="https://img.shields.io/badge/DIO-Formação%20Power%20BI-0E76FD?style=for-the-badge">
-</a>
 
 </p>
 
@@ -28,109 +26,123 @@
 
 # 📖 Sobre o Projeto
 
-Este projeto foi desenvolvido como parte do desafio prático da **Formação Power BI Analyst**, promovida pela **DIO**, utilizando como base o conjunto de dados **Financial Sample**.
+Este projeto foi desenvolvido como parte do **Desafio Prático da Formação Power BI Analyst**, promovida pela **DIO**, utilizando como fonte de dados o conjunto **Financial Sample**.
 
-O objetivo foi construir um relatório interativo para análise de **vendas, produtos, segmentos, países, unidades vendidas, descontos e custos**, aplicando recursos de visualização e navegação disponíveis no Power BI.
+O objetivo do projeto é desenvolver um relatório interativo para análise de **vendas e desempenho financeiro**, utilizando recursos do Microsoft Power BI para transformar dados em informações relevantes para análise e tomada de decisão.
 
-Além da construção dos visuais, o projeto buscou explorar recursos de **interatividade e experiência do usuário**, permitindo alternar diferentes representações dos mesmos dados por meio de botões e indicadores.
+O dashboard foi estruturado considerando princípios de **Business Intelligence, visualização de dados, interatividade e organização visual**, permitindo explorar os resultados sob diferentes perspectivas.
+
+Entre as principais análises desenvolvidas estão:
+
+- 💰 Vendas;
+- 📦 Unidades vendidas;
+- 🏷️ Descontos;
+- 📉 Média de descontos;
+- 💵 Custo dos produtos vendidos (COGS);
+- 📈 Evolução mensal das vendas;
+- 🏢 Vendas por segmento;
+- 📦 Vendas por produto;
+- 🌎 Vendas por país.
 
 ---
 
 # 🎯 Objetivos do Desafio
 
-O projeto foi desenvolvido com os seguintes objetivos:
+O desenvolvimento do projeto teve como principais objetivos:
 
-- 📊 Construir um relatório analítico utilizando a base Financial Sample;
-- 📈 Criar indicadores (KPIs) para acompanhamento dos principais resultados;
-- 📅 Permitir a análise das vendas ao longo do tempo;
-- 🌎 Analisar a distribuição das vendas por país;
-- 🏢 Comparar o desempenho dos diferentes segmentos;
-- 📦 Identificar os produtos com maior volume de vendas;
-- 🔄 Permitir a alternância entre diferentes tipos de visualização;
-- 🧭 Criar botões para melhorar a navegabilidade do relatório;
-- 🎛️ Utilizar segmentadores para filtragem dos dados;
-- 🎨 Aplicar princípios de organização visual e storytelling com dados.
-
----
-
-# 🖥️ Dashboard
-
-## 📊 Sales Report
-
-A página **Sales Report** apresenta uma visão consolidada do desempenho de vendas, permitindo ao usuário analisar os resultados por período, segmento, produto e país.
-
-O painel possui uma estrutura composta por:
-
-- Indicadores de **Sales**;
-- **Units Sold**;
-- **Discounts**;
-- **Média Discounts**;
-- **COGS**;
-- Evolução mensal das vendas;
-- Análise de vendas por segmento;
-- Análise de vendas por produto;
-- Distribuição geográfica das vendas.
-
-<p align="center">
-<img src="images/Pag1.png" alt="Dashboard Sales Report" width="1000">
-</p>
+- Construir um relatório analítico utilizando a base **Financial Sample**;
+- Aplicar os conceitos apresentados na formação;
+- Criar indicadores para acompanhamento dos resultados;
+- Desenvolver visualizações interativas;
+- Utilizar segmentadores de dados;
+- Implementar botões de navegação;
+- Criar diferentes visualizações para um mesmo conjunto de informações;
+- Explorar análises temporais, comerciais e geográficas;
+- Aplicar princípios de organização e apresentação de dashboards.
 
 ---
 
-# 📅 Filtro por Período
+# 📊 Estrutura do Dashboard
 
-O dashboard possui um segmentador de período que permite selecionar uma data inicial e uma data final.
+O relatório foi desenvolvido com foco na análise de vendas e possui uma estrutura organizada em diferentes áreas de informação.
 
-Essa funcionalidade possibilita analisar os indicadores e gráficos considerando diferentes intervalos de tempo, tornando o relatório mais flexível para exploração dos dados.
+## 🧭 Navegação
+
+O dashboard utiliza botões de navegação para facilitar a movimentação entre as diferentes áreas do relatório.
+
+Essa abordagem proporciona uma experiência mais intuitiva ao usuário e permite organizar diferentes perspectivas analíticas sem comprometer a estrutura visual do painel.
 
 ---
 
-# 📈 Evolução das Vendas
+# 📌 Indicadores de Desempenho
+
+Na parte superior do dashboard foram utilizados cartões para apresentar os principais indicadores consolidados.
+
+Os indicadores utilizados são:
+
+| Indicador | Descrição |
+|-----------|-----------|
+| 💰 **Sales** | Valor total das vendas |
+| 📦 **Units Sold** | Quantidade total de unidades vendidas |
+| 🏷️ **Discounts** | Valor total dos descontos |
+| 📉 **Média Discounts** | Média dos descontos aplicados |
+| 💵 **COGS** | Custo dos produtos vendidos |
+
+Esses indicadores proporcionam uma visão rápida da situação geral dos resultados antes da análise detalhada dos demais gráficos.
+
+---
+
+# 📅 Segmentação por Período
+
+Foi utilizado um **segmentador de datas** para permitir a seleção de um período inicial e final.
+
+A aplicação desse recurso permite que os demais elementos do relatório sejam analisados considerando diferentes intervalos de tempo.
+
+Essa funcionalidade aumenta a capacidade de exploração dos dados e permite realizar análises específicas conforme o período selecionado.
+
+---
+
+# 📈 Sales x Month
 
 O gráfico **Sales x Month** apresenta a evolução das vendas ao longo dos meses.
 
-Essa visualização permite identificar:
+A visualização permite identificar:
 
-- Tendências de crescimento ou redução;
-- Meses de maior desempenho;
-- Variações sazonais;
-- Pontos de maior concentração das vendas.
+- Evolução do volume de vendas;
+- Variações entre os meses;
+- Períodos de maior desempenho;
+- Períodos de menor desempenho;
+- Tendências ao longo do período analisado.
 
-No período apresentado no dashboard, **outubro se destaca como o mês de maior volume de vendas**, enquanto os meses iniciais apresentam valores menores.
+A representação temporal facilita a identificação de comportamentos e variações no desempenho das vendas.
 
 ---
 
 # 🏢 Sales x Segment
 
-A análise por segmento permite compreender como as vendas estão distribuídas entre os diferentes grupos de clientes.
+A análise **Sales x Segment** permite comparar o volume de vendas entre os diferentes segmentos de clientes.
 
-Foi implementada uma funcionalidade de alternância entre dois tipos de visualização:
+Para ampliar a interatividade do relatório, foram disponibilizadas diferentes formas de representação dos mesmos dados.
 
 ### 📊 Bar Chart
 
-Apresenta os valores absolutos de vendas por segmento, facilitando a comparação direta entre os grupos.
+O gráfico de barras apresenta os valores de vendas por segmento, facilitando a comparação direta entre os grupos.
 
 ### 🥧 Pie Chart
 
-Apresenta a participação percentual de cada segmento no total das vendas.
+O gráfico de pizza apresenta a participação relativa de cada segmento no total das vendas.
 
-<p align="center">
-<img src="images/Pag1.png" alt="Sales x Segment - Pie Chart" width="1000">
-</p>
+Os botões de seleção permitem alternar entre as duas visualizações de acordo com a necessidade da análise.
 
-<p align="center">
-<img src="images/Pag2.png" alt="Sales x Segment - Bar Chart" width="1000">
-</p>
-
-> 🔄 Os botões **Bar Chart** e **Pie Chart** permitem alternar entre as duas representações sem a necessidade de criar uma nova página.
+Essa abordagem demonstra a utilização de recursos de **interatividade e controle de visuais** no Power BI.
 
 ---
 
 # 📦 Sales x Product
 
-O gráfico **Sales x Product** apresenta os produtos com maior volume de vendas.
+A seção **Sales x Product** apresenta uma comparação das vendas entre os principais produtos.
 
-Entre os produtos apresentados, destacam-se:
+Entre os produtos apresentados estão:
 
 - Paseo;
 - VTT;
@@ -139,157 +151,199 @@ Entre os produtos apresentados, destacam-se:
 - Montana;
 - Carretera.
 
-Essa visualização facilita a identificação dos produtos que possuem maior participação no faturamento.
+A utilização do gráfico de barras permite identificar rapidamente os produtos que apresentam maior volume de vendas.
 
 ---
 
 # 🌎 Sales x Country
 
-A análise geográfica permite visualizar a distribuição das vendas entre os diferentes países.
+A análise **Sales x Country** apresenta a distribuição das vendas entre diferentes países.
 
-Para ampliar a experiência de exploração dos dados, foram implementadas duas formas de visualização:
+Foram utilizadas duas formas de visualização:
 
 ### 🗺️ Map Chart
 
-Representação geográfica dos valores de vendas por localização.
+O mapa permite observar espacialmente a distribuição das vendas entre os países analisados.
 
 ### 🌳 Treemap
 
-Representação proporcional das vendas por país, permitindo comparar rapidamente a participação de cada mercado.
+O Treemap representa proporcionalmente o volume de vendas de cada país, facilitando a comparação entre os mercados.
 
-<p align="center">
-<img src="images/Pag1.png" alt="Sales x Country - Map Chart" width="1000">
-</p>
-
-<p align="center">
-<img src="images/Pag2.png" alt="Sales x Country - Treemap" width="1000">
-</p>
-
-> 🔄 Os botões **Treemap** e **Map Chart** permitem alternar entre as diferentes representações da análise geográfica.
+Assim como na análise por segmento, foram utilizados botões para permitir a alternância entre as diferentes representações.
 
 ---
 
-# 🎛️ Interatividade e Navegação
+# 🔄 Interatividade
 
-Um dos principais objetivos do projeto foi aplicar recursos de interatividade para melhorar a experiência de navegação.
+Um dos principais aspectos trabalhados no projeto foi a interatividade.
 
-Foram utilizados:
+Foram utilizados recursos como:
 
-- 🏠 Botões de navegação;
-- 📊 Navegação entre relatórios;
 - 🎛️ Segmentadores de dados;
-- 🔄 Botões para alternância de visuais;
-- 🗺️ Diferentes representações geográficas;
+- 🔘 Botões;
+- 🧭 Navegação entre páginas;
+- 🔄 Alternância entre diferentes visuais;
 - 📊 Indicadores de desempenho;
-- 📌 Organização visual dos elementos;
-- 🔖 Bookmarks para controle das visualizações.
+- 🗺️ Visualizações geográficas;
+- 🌳 Treemap;
+- 📈 Análise temporal.
 
-A utilização desses recursos permite que diferentes perspectivas dos mesmos dados sejam apresentadas em um espaço reduzido, evitando a necessidade de criar diversas páginas para análises semelhantes.
-
----
-
-# 📊 Principais Indicadores
-
-O painel apresenta cinco indicadores principais:
-
-| Indicador | Descrição |
-|------------|-----------|
-| 💰 **Sales** | Valor total das vendas |
-| 📦 **Units Sold** | Quantidade total de unidades vendidas |
-| 🏷️ **Discounts** | Valor total dos descontos |
-| 📉 **Média Discounts** | Média dos descontos aplicados |
-| 💵 **COGS** | Custo dos produtos vendidos |
-
-Esses indicadores fornecem uma visão inicial da performance financeira antes da exploração dos demais gráficos.
+A utilização desses recursos permite apresentar diferentes perspectivas dos mesmos dados de forma organizada e interativa.
 
 ---
 
-# 📊 Principais Visualizações
+# 💡 Análises Possibilitadas
 
-| Visualização | Objetivo |
-|--------------|----------|
-| 📌 Cards / KPIs | Apresentar os principais indicadores |
-| 📈 Line Chart / Área | Analisar a evolução mensal das vendas |
-| 📊 Bar Chart | Comparar vendas entre segmentos |
-| 🥧 Pie Chart | Analisar a participação dos segmentos |
-| 📊 Bar Chart de Produtos | Identificar os produtos com maior volume de vendas |
-| 🗺️ Map Chart | Visualizar a distribuição geográfica das vendas |
-| 🌳 Treemap | Comparar a participação das vendas por país |
+A estrutura desenvolvida permite responder a diferentes questões relacionadas ao desempenho comercial, como:
 
----
+- Qual foi o volume total de vendas?
+- Como as vendas evoluíram ao longo dos meses?
+- Qual segmento apresenta maior participação nas vendas?
+- Quais produtos apresentam maior volume de vendas?
+- Quais países possuem maior participação no resultado?
+- Como os resultados se distribuem geograficamente?
+- Como os descontos estão relacionados ao período analisado?
+- Qual é o custo dos produtos vendidos?
+- Como os indicadores se comportam em diferentes períodos?
 
-# 🔎 Principais Insights
-
-A análise realizada no dashboard permite identificar alguns padrões relevantes:
-
-### 📈 Evolução temporal
-
-As vendas apresentam variações ao longo dos meses, com destaque para o crescimento observado no segundo semestre.
-
-O maior volume apresentado no período ocorre em **outubro**, seguido por dezembro.
-
-### 🏢 Segmentos
-
-O segmento **Government** apresenta a maior participação nas vendas, seguido pelo **Small Business** e **Enterprise**.
-
-### 📦 Produtos
-
-O produto **Paseo** apresenta o maior volume de vendas entre os produtos destacados no relatório.
-
-### 🌎 Países
-
-A análise geográfica demonstra concentração relevante das vendas em determinados mercados, permitindo identificar rapidamente os países com maior participação no resultado.
+Dessa forma, o dashboard funciona como uma ferramenta de exploração dos dados e não apenas como uma apresentação estática de informações.
 
 ---
 
-# 🛠️ Tecnologias Utilizadas
+# 🛠️ Tecnologias e Recursos Utilizados
 
-| Tecnologia | Aplicação |
-|------------|-----------|
+| Tecnologia / Recurso | Aplicação |
+|----------------------|-----------|
 | 📊 **Microsoft Power BI Desktop** | Desenvolvimento do relatório |
 | ⚙️ **Power Query** | Tratamento e transformação dos dados |
 | 📈 **DAX** | Criação de medidas e indicadores |
-| 📊 **Data Visualization** | Construção das visualizações |
-| 🔖 **Bookmarks** | Alternância entre visualizações |
-| 🎛️ **Slicers** | Filtragem dos dados |
+| 🎛️ **Segmentadores** | Filtragem e análise dos dados |
+| 🔘 **Botões** | Interatividade e navegação |
+| 🔖 **Bookmarks** | Controle e alternância de visualizações |
+| 📊 **Data Visualization** | Representação dos indicadores |
+| 🗺️ **Map Chart** | Análise geográfica |
+| 🌳 **Treemap** | Comparação proporcional |
 | 🗂️ **Git** | Versionamento |
-| 💻 **GitHub** | Documentação e publicação do projeto |
+| 💻 **GitHub** | Organização e documentação do projeto |
 
 ---
 
-# 🧩 Recursos do Power BI Aplicados
+# 🧠 Conceitos Aplicados
 
-Durante o desenvolvimento foram explorados recursos como:
+Durante o desenvolvimento foram trabalhados conceitos fundamentais de Business Intelligence e análise de dados, incluindo:
 
-- Modelagem de dados;
-- Power Query;
-- DAX;
-- Cards;
-- Gráficos de linha;
-- Gráficos de barras;
-- Gráfico de pizza;
-- Mapas;
-- Treemap;
-- Segmentadores de data;
-- Botões;
-- Bookmarks;
+### 📊 Visualização de Dados
+
+Utilização de diferentes tipos de gráficos para representar informações de forma clara e objetiva.
+
+### 📈 Análise Temporal
+
+Avaliação da evolução das vendas ao longo dos meses.
+
+### 🌎 Análise Geográfica
+
+Utilização de mapas e Treemap para analisar a distribuição das vendas por país.
+
+### 🎛️ Interatividade
+
+Aplicação de segmentadores e botões para permitir diferentes perspectivas de análise.
+
+### 🧭 Experiência de Navegação
+
+Organização dos elementos e criação de mecanismos de navegação para facilitar a utilização do relatório.
+
+### 📌 Storytelling com Dados
+
+Organização das informações de forma que os indicadores e visualizações conduzam o usuário durante a exploração dos dados.
+
+---
+
+# 📁 Arquivos do Projeto
+
+Os documentos utilizados e desenvolvidos neste projeto podem ser **baixados diretamente na seção de arquivos (Files)** disponibilizada junto a este projeto.
+
+Entre os materiais estão os arquivos necessários para consulta e/ou execução do projeto.
+
+> 📥 **Os arquivos do projeto estão disponíveis para download na seção Files.**
+
+---
+
+# 📚 Fonte dos Dados
+
+### Financial Sample
+
+O projeto utiliza a base de dados **Financial Sample**, disponibilizada para os desafios da formação de Power BI.
+
+A base contém informações relacionadas a vendas, produtos, segmentos, países, descontos, unidades comercializadas e custos.
+
+---
+
+# 🎓 Formação Power BI Analyst
+
+Este projeto faz parte do desafio prático da **Formação Power BI Analyst — DIO**.
+
+O desafio propõe a aplicação prática dos conceitos apresentados durante a formação, incluindo:
+
+- Estruturação de relatórios;
+- Criação de visuais;
+- Indicadores;
+- Segmentadores;
+- Botões de navegação;
+- Interatividade;
+- Diferentes perspectivas de visualização;
+- Organização de dashboards.
+
+O projeto representa uma aplicação prática desses conceitos utilizando a base **Financial Sample**.
+
+---
+
+# 🚀 Competências Desenvolvidas
+
+## Power BI
+
+- Desenvolvimento de dashboards;
+- Criação de indicadores;
+- Construção de gráficos;
+- Segmentação de dados;
 - Navegação entre páginas;
-- Formatação e organização de layouts;
-- Interatividade entre visuais.
+- Bookmarks;
+- Botões interativos;
+- Mapas;
+- Treemaps.
+
+## Análise de Dados
+
+- Análise de vendas;
+- Análise temporal;
+- Análise por segmento;
+- Análise por produto;
+- Análise geográfica;
+- Interpretação de indicadores.
+
+## Business Intelligence
+
+- Visualização de dados;
+- Organização de informações;
+- Storytelling com dados;
+- Construção de relatórios interativos;
+- Apoio à tomada de decisão.
 
 ---
 
-# 📁 Estrutura do Projeto
+# 👨‍💻 Autor
 
-```text
-📦 Desafio-Pratico-Bootcamp-Universia-DIO
-│
-├── 📊 Projeto.pbix
-├── 📄 README.md
-│
-├── 📁 images
-│   ├── Pag1.png
-│   └── Pag2.png
-│
-└── 📁 dataset
-    └── Financial Sample
+## Risoaldo de Almeida Pereira
+
+🎓 Estudante de Análise de Dados
+
+📊 Desenvolvendo projetos com **Power BI, SQL e Python**, com foco em **Business Intelligence, análise de dados e construção de soluções orientadas à tomada de decisão**.
+
+---
+
+<div align="center">
+
+### ⭐ Obrigado pela visita!
+
+Se este projeto foi útil ou interessante, considere deixar uma ⭐ no repositório.
+
+</div>
